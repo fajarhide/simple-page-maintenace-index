@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-TEMP_FILE=$(mktemp /tmp/index.php.XXXXX)
+TEMP_FILE=$(mktemp /tmp/index.html.XXXXX)
 
-curl -sSL https://raw.githubusercontent.com/fajarhide/simple-page-maintenace-index/master/index.php > $TEMP_FILE
+curl -sSL https://raw.githubusercontent.com/fajarhide/simple-page-maintenace-index/master/index.html > $TEMP_FILE
 
 echo -n "Name (optional): " 1>&2
 read NAME
